@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Трактир "Пушкин"</title>
+  </head>
+  <body>
+    <!---Хидер-->
+    <header>
+      <div class="container">
+        <div class="row">
+          <a href="index.html"
+            ><img class="logo" src="image.svg" alt="logo"
+          /></a>
+          <div class="enter">
+            <a href="index.html"
+              ><button class="button"><b>Войти</b></button></a
+            >
+            <a href="index.html"
+              ><img class="basket" src="basket.png" alt="basket"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!---Основная часть-->
+    <main>
+      <!---"Ресторан "Пушкин"-->
+      <div class="hero">
+        <div class="container">
+          <div class="hero-card">
+            <h1>Трактир "Пушкин"</h1>
+            <div class="hero-card-bottom">
+              <div class="hero-card-opt">₽₽₽ • Европейская</div>
+              <div class="hero-card-time">40 - 50 мин</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---Карточки блюд-->
+      <div class="menu">
+        <div class="menu-inline">
+          <div class="menu-point">
+            <a href="#"><p class="menu-point-item">Закуски</p></a>
+          </div>
+          <div class="menu-point">
+            <a href="#"><p class="menu-point-item">Салаты</p></a>
+          </div>
+          <div class="menu-point">
+            <a href="#"><p class="menu-point-item">Супы</p></a>
+          </div>
+          <div class="menu-point">
+            <a href="#"
+              ><p class="menu-point-item" id="items">Горячие блюда</p></a
+            >
+          </div>
+          <div class="menu-point">
+            <a href="#"><p class="menu-point-item">Гарниры</p></a>
+          </div>
+          <div class="menu-point">
+            <a href="#"><p class="menu-point-item">Десерты</p></a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="headline"><h2 id="headline-text">Закуски</h2></div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-lg-6 col-xl-6">
+            <a href="#">
+              <div class="menu-card menu-image">
+                <p class="menu-title">
+                  Сельдь на бородинском <span class="bread">хлебе</span
+                  ><span class="dots">...</span>
+                </p>
+                <p class="menu-title-1">с яйцом и огурцом</p>
+                <p class="menu-price-1">240 ₽</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-6 col-xl-6">
+            <a href="#">
+              <div class="menu-card menu-image-2">
+                <p class="menu-title">Соленья ассорти</p>
+                <p class="menu-price">320 ₽</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-6 col-xl-6">
+            <a href="#">
+              <div class="menu-card menu-image-3">
+                <p class="menu-title">Грибы маринованные</p>
+                <p class="menu-price">300 ₽</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-6 col-xl-6">
+            <a href="#">
+              <div class="menu-card menu-image-4">
+                <p class="menu-title">Сало домашнее с горчицей</p>
+                <p class="menu-price">320 ₽</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-6 col-xl-6">
+            <a href="#">
+              <div class="menu-card menu-image-5">
+                <p class="menu-title">Малосольная семга</p>
+                <p class="menu-price">390 ₽</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-6 col-xl-6">
+            <a href="#">
+              <div class="menu-card menu-image-6">
+                <p class="menu-title">Язык говяжий с хреном</p>
+                <p class="menu-price">350 ₽</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!---Футер-->
+    <footer>
+      <!---Кнопка прокрутки-->
+      <a href="#" class="scroll"
+        ><img class="buttonup" src="btn-up.png" alt=""
+      /></a>
+      <div class="row">
+        <div class="col-xs-8 col-md-4 col-lg-4">
+          <!---Логотип-->
+          <div class="uber">
+            <div class="ubercard">
+              <img src="white-logo.svg" alt="logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+          <div class="line">
+            <div class="border"></div>
+          </div>
+        </div>
+      </div>
+      <!---Выбор языка страницы-->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-lg-4">
+            <div class="col col__footer">
+              <select name="language" id="lang">
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+                <option value="esp">Еspañol</option>
+                <option value="fr">Français</option>
+              </select>
+              <!---Ссылки-->
+              <p class="tag"><span id="green">#</span>UberEats</p>
+              <img src="facebook.svg" alt="facebook" /><img
+                src="twitter.svg"
+                alt="twitter"
+              />
+              <img src="instagram.png" alt="instagram" />
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4">
+            <div class="col col__footer">
+              <p class="foot">Об UberEats</p>
+              <p class="foot">Станьте партнёром по доставке</p>
+              <p class="foot">Станьте партнёром-рестораном</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4">
+            <div class="col col__footer">
+              <p class="foot">Все города</p>
+              <p class="foot">Цены</p>
+              <p class="foot">Помощь</p>
+              <p class="foot">FAQs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+          <div class="line">
+            <div class="border"></div>
+          </div>
+        </div>
+      </div>
+      <div class="stores">
+        <form action="https://www.apple.com/ua/app-store/?" target="_blank">
+          <button class="play">
+            <img class="buttons" src="Group.svg" alt="apple" />
+          </button>
+        </form>
+        <form action="https://play.google.com/" target="_blank">
+          <button class="play">
+            <img
+              class="buttons"
+              src="en_badge_web_generic-cf6dad406f.svg"
+              alt="google"
+            />
+          </button>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+          <div class="line">
+            <div class="border"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="cellar col-xs-12 col-md-4 col-lg-4">
+            <div class="col col__footer">
+              <a href="index.html">
+                <p class="bottom">© 2017 Uber Technologies Inc.</p></a
+              >
+            </div>
+          </div>
+          <div class="cellar col-xs-12 col-md-4 col-lg-4">
+            <div class="col col__footer">
+              <a href="index.html">
+                <p class="bottom">Обработка персональных данных</p></a
+              >
+            </div>
+          </div>
+          <div class="cellar col-xs-12 col-md-4 col-lg-4">
+            <div class="col col__footer">
+              <a href="index.html"
+                ><p class="bottom">Пользовательское соглашение</p></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
