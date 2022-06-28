@@ -1,0 +1,533 @@
+/*Общий для обеих страниц код*/
+html,
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+/*Хидер первой и второй страницы*/
+header {
+  position: fixed;
+  width: 100%;
+  height: 72px;
+  background-color: white;
+  box-shadow: 0px 5px 15px rgba(38, 38, 38, 0.16);
+  z-index: 5;
+}
+header .container .row {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  padding-top: 30px;
+  margin-left: 8px;
+}
+.button {
+  background-color: white;
+  width: 78px;
+  height: 40px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  border: 2px solid rgba(38, 38, 38, 0.16);
+  border-radius: 2px;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.basket {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 27px;
+  box-sizing: border-box;
+}
+
+.enter {
+  display: flex;
+  align-content: center;
+}
+
+/*Первая страница*/
+main {
+  width: 100%;
+}
+
+/*Поисковая строка*/
+.search_rest {
+  margin-top: 104px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #757575;
+}
+/*Карточки ресторанов*/
+.food {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  width: 100%;
+  color: #626262;
+}
+.rest {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  color: #1d1d1d;
+}
+
+.title {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1d;
+}
+.price {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #626262;
+}
+.time {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 21px;
+  color: #1d1d1d;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: none;
+}
+
+/*Футер первой и второй страницы*/
+footer {
+  background-color: #000;
+  margin-top: 80px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+.uber {
+  display: flex;
+}
+.ubercard {
+  margin-top: 50px;
+  margin-left: 80px;
+}
+.line {
+  padding-top: 50px;
+  padding-left: 80px;
+}
+.border {
+  width: 95%;
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+#lang {
+  width: 227px;
+  height: 40px;
+  background-color: #262626;
+  color: rgb(225, 225, 225);
+  margin-top: 32px;
+  border: none;
+}
+select {
+  background-image: url(world.png);
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: 16px 12px;
+}
+option {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #fff;
+}
+/*Ссылки на соцсети*/
+p {
+  color: #fff;
+  width: 72px;
+  height: 16px;
+  font-family: Roboto, sans-serif;
+  white-space: nowrap;
+}
+
+.foot {
+  padding-top: 23px;
+}
+#green {
+  color: #49a144;
+}
+.tag {
+  padding-top: 33px;
+  padding-bottom: 10px;
+}
+/*Ссылки на скачивания приложений*/
+.buttons {
+  width: 135px;
+  height: 40px;
+}
+.play {
+  padding-top: 40px;
+  padding-bottom: 39px;
+  width: 150px;
+  height: 70px;
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+.stores {
+  display: flex;
+  justify-content: center;
+}
+.bottom {
+  color: #fff;
+}
+/*Пункт */
+.cellar {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+/*Кнопка прокрутки*/
+.scroll {
+  position: fixed;
+  right: 16px;
+  bottom: 24px;
+  transition: transform;
+  filter: opacity(80%);
+  z-index: 5;
+}
+.scroll:hover {
+  transform: scale(110%);
+  filter: opacity(100%);
+}
+
+/*Вторая страница*/
+
+/*"Ресторан "Пушкин"*/
+.hero {
+  height: 364px;
+  background: url(photo.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 80px;
+  margin: 0 auto;
+}
+
+.hero-card {
+  background-color: #fff;
+  box-shadow: 0px 5px 15px rgba(38, 38, 38, 0.16);
+  height: 204px;
+  width: fit-content;
+  padding: 40px 35px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  border-radius: 2px;
+}
+.hero-card > h1 {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #1d1d1d;
+  margin: 0;
+}
+.hero-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-card-opt {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #626262;
+}
+
+.hero-card-time {
+  color: #fff;
+  background-color: #000;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-family: Roboto, sans-serif;
+}
+/*Меню*/
+.menu {
+  background-color: #fff;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  height: 80px;
+}
+.menu-point-item {
+  color: rgba(98, 98, 98, 1);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.menu-point {
+  flex: 1 1 auto;
+  margin: 0 5px;
+}
+.menu-inline {
+  padding-left: 81px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  margin: 0 -5px;
+}
+
+.menu-point :hover {
+  color: rgba(50, 116, 48, 1);
+}
+/*Заголовок*/
+.headline {
+  margin-top: 56px;
+  margin-bottom: 32px;
+  margin-left: 81px;
+}
+
+#headline-text {
+  font-family: sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(29, 29, 29, 1);
+}
+/*Карточки меню*/
+.menu-card {
+  background-color: #fff;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+  translate: transform 0.1s linear;
+}
+.menu-card3 :hover {
+  background-color: #d8d8d8;
+  transform: scale(102%);
+}
+
+/*Текст внутри карточек*/
+.menu-title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1d;
+  margin-bottom: 4px;
+  margin-left: 16px;
+}
+.menu-title-1 {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #626262;
+  margin-top: 0px;
+  margin-left: 16px;
+}
+.menu-price {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  color: #1d1d1d;
+  margin-left: 16px;
+  padding-top: 83px;
+}
+.menu-price-1 {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  color: #1d1d1d;
+  margin-left: 16px;
+  padding-top: 63px;
+}
+/*Изображения в карточках*/
+.menu-image {
+  background-image: url(Capture.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  margin-bottom: 50px;
+}
+.menu-image-2 {
+  background-image: url(photo2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  margin-bottom: 50px;
+}
+.menu-image-3 {
+  background-image: url(griby.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  margin-bottom: 50px;
+}
+.menu-image-4 {
+  background-image: url(salo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  margin-bottom: 50px;
+}
+.menu-image-5 {
+  background-image: url(semga.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  margin-bottom: 50px;
+}
+.menu-image-6 {
+  background-image: url(Jsyk.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  margin-bottom: 50px;
+}
+/*Медиа-запросы*/
+@media (max-width: 768px) {
+  .basket {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-card {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .button {
+    margin-right: 8px;
+    margin-left: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .headline {
+    margin-left: 140px;
+    margin-right: 118px;
+    margin-top: 112px;
+    margin-bottom: 56px;
+  }
+}
+@media (max-width: 768px) {
+  #headline-text {
+    text-decoration: underline;
+    text-decoration-color: rgba(117, 117, 117, 1);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-card {
+    margin-top: 131px;
+    margin-left: 8px;
+    margin-right: 4px;
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    background: url(d42ea9bbf7aff297c2e1eb5e5f3b7fa6-w1080-87.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 130px;
+  }
+
+  .hero-card-bottom {
+    flex-flow: column;
+  }
+  .line {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .border {
+    width: 100%;
+  }
+  .hero-card-time {
+    margin-top: 15px;
+  }
+  .hero-card > h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .menu-title-1 {
+    font-size: 13px;
+  }
+  .menu-title {
+    font-size: 14px;
+    margin-left: 4px;
+    margin-right: 18px;
+  }
+  .menu-title .bread {
+    display: none;
+  }
+  .menu-title .dots {
+    display: inline;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #1d1d1d;
+  }
+  .menu-price-1 {
+    font-size: 13px;
+  }
+  .rest-img {
+    width: 100%;
+  }
+  .ubercard {
+    margin-left: 8px;
+  }
+}
+@media (min-width: 768px) {
+  .menu-title .dots {
+    display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .menu-inline {
+    padding-left: 8px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .menu-inline {
+    padding-left: 8px;
+  }
+}
