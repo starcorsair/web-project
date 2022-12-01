@@ -20,6 +20,6 @@
 
 Изменить переписать элементы на flexboxgrid на чистом grid.
 
-##Сайт проекта
+## Сайт проекта
 
 https://pushkinprodjectusover.netlify.app/
